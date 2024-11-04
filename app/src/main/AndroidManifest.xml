@@ -7,8 +7,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller3">
-        <activity android:name=".ConfigActivity" />
-        <activity android:name=".NameActivity" />
+        <activity android:name=".Settings.ConfigActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".StartActivity"
             android:exported="true">

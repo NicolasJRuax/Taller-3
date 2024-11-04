@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Usuario
+
+usecase "Abrir Aplicación" as UC1
+usecase "Ver Saludo Personalizado" as UC2
+usecase "Continuar a Pantalla Principal" as UC3
+usecase "Ingresar Nombre" as UC4
+usecase "Guardar Nombre en SharedPreferences" as UC5
+usecase "Ver Nombre en Pantalla" as UC6
+usecase "Guardar Nombre en SQLite" as UC7
+usecase "Cambiar Color de Fondo" as UC8
+usecase "Guardar Preferencia de Color" as UC9
+usecase "Volver a Pantalla de Inicio" as UC10
+
+Usuario --> UC1
+UC1 --> UC2
+Usuario --> UC3
+UC3 --> UC4
+Usuario --> UC4
+Usuario --> UC5
+UC5 --> UC6
+Usuario --> UC7
+Usuario --> UC8
+UC8 --> UC9
+Usuario --> UC10
+
+@enduml

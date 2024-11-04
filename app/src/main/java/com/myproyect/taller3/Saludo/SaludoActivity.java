@@ -1,4 +1,4 @@
-package com.myproyect.taller3;
+package com.myproyect.taller3.Saludo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,10 @@ import android.os.Handler;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myproyect.taller3.MainActivity;
+import com.myproyect.taller3.R;
+
 import java.util.Calendar;
 
 

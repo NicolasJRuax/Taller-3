@@ -1,4 +1,4 @@
-package com.myproyect.taller3;
+package com.myproyect.taller3.Saludo;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myproyect.taller3.DB.UsuarioDBHelper;
+import com.myproyect.taller3.R;
 
 
 public class NameActivity extends AppCompatActivity {

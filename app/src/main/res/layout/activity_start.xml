@@ -5,12 +5,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/white">
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saludo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp" />
 
     <Button
         android:id="@+id/btnIrPrincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir a la Actividad Principal" />
+        android:text="Continuar" />
 
 </LinearLayout>

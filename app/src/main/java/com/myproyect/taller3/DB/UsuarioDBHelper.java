@@ -1,5 +1,5 @@
 // UsuarioDBHelper.java
-package com.myproyect.taller3;
+package com.myproyect.taller3.DB;
 
 import android.content.ContentValues;
 import android.content.Context;

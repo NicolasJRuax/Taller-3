@@ -6,16 +6,31 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnIrNombre"
+    <EditText
+        android:id="@+id/edtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ir a Pantalla de Nombre" />
+        android:padding="48dp"
+        android:hint="Ingresa tu nombre" />
 
     <Button
-        android:id="@+id/btnIrConfiguracion"
+        android:id="@+id/btnGuardarNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ir a Configuración" />
+        android:text="Guardar nombre" />
+
+    <TextView
+        android:id="@+id/tvNombreMostrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu nombre aparecerá aquí"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnGuardarSQL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar SQL" />
 
 </LinearLayout>

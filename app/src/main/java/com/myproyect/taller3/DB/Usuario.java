@@ -1,5 +1,5 @@
 // Usuario.java
-package com.myproyect.taller3;
+package com.myproyect.taller3.DB;
 
 public class Usuario {
     private int id;

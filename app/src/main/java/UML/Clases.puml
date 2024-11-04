@@ -1,0 +1,74 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "Actividades" {
+    class StartActivity {
+        + onCreate(Bundle)
+        - obtenerSaludo() : String
+        - cargarColorFondo()
+        - TextView tvSaludo
+        - Button btnIrPrincipal
+        - View layoutStart
+        - SharedPreferences prefs
+    }
+
+    class MainActivity {
+        + onCreate(Bundle)
+        + onResume()
+        - cargarColorFondo()
+        + onCreateOptionsMenu(Menu) : boolean
+        + onOptionsItemSelected(MenuItem) : boolean
+        - View layoutPrincipal
+        - EditText edtNombre
+        - TextView tvNombreMostrado
+        - UsuarioDBHelper dbHelper
+        - SharedPreferences prefs
+        - int colorFondo
+    }
+
+    class ConfigActivity {
+        + onCreate(Bundle)
+        + onResume()
+        - cambiarColorFondo(int)
+        - cargarColorFondo()
+        - View layoutConfig
+        - Button btnColorRojo
+        - Button btnColorVerde
+        - Button btnVolverInicio
+        - SharedPreferences prefs
+        - int colorFondo
+    }
+}
+
+class UsuarioDBHelper {
+    + UsuarioDBHelper(Context)
+    + onCreate(SQLiteDatabase)
+    + onUpgrade(SQLiteDatabase, int, int)
+    + guardarUsuario(String)
+    + obtenerNombresUsuarios() : String
+    - DATABASE_NAME : String
+    - DATABASE_VERSION : int
+}
+
+class Usuario {
+    - int id
+    - String nombre
+    + Usuario()
+    + Usuario(int, String)
+    + getId() : int
+    + getNombre() : String
+    + setId(int)
+    + setNombre(String)
+}
+
+' Relaciones
+StartActivity ..|> AppCompatActivity
+MainActivity ..|> AppCompatActivity
+ConfigActivity ..|> AppCompatActivity
+
+MainActivity --> UsuarioDBHelper : usa
+MainActivity --> SharedPreferences : usa
+ConfigActivity --> SharedPreferences : usa
+StartActivity --> SharedPreferences : usa
+
+@enduml

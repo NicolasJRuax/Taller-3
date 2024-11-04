@@ -1,10 +1,12 @@
-package com.myproyect.taller3;
+package com.myproyect.taller3.Settings;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.myproyect.taller3.R;
 
 
 public class SettingsActivity extends AppCompatActivity {
