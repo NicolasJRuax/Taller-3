@@ -1,0 +1,33 @@
+<!-- activity_name.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre" />
+
+    <Button
+        android:id="@+id/btnGuardarNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en SharedPreferences" />
+
+    <Button
+        android:id="@+id/btnGuardarSQLite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar en SQLite" />
+
+    <Button
+        android:id="@+id/btnCargarSQLite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar de SQLite" />
+
+</LinearLayout>

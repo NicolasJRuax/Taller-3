@@ -1,42 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPrincipal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Enter your name"
-        android:layout_centerHorizontal="true"
-        android:padding="48dp"
-        android:layout_marginTop="100dp" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <Button
-        android:id="@+id/buttonSave"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnIrNombre"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:layout_below="@id/editTextName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:text="Ir a Pantalla de Nombre" />
 
     <Button
-        android:id="@+id/buttonLoad"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnIrConfiguracion"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Load"
-        android:layout_below="@id/buttonSave"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:text="Ir a Configuración" />
 
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_below="@id/buttonLoad"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
-
-</RelativeLayout>
+</LinearLayout>
